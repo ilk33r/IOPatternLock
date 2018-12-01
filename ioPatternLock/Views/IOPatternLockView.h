@@ -31,6 +31,10 @@ IB_DESIGNABLE
 
 @property (nonatomic, weak) IBOutlet id<IOPatternLockDelegate> delegate;
 
+#pragma mark - Helper Methods
+
+- (void)redraw;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -25,6 +25,7 @@
 
 - (void)ioPatternLockView:(IOPatternLockView *)patternLockView patternCompletedWithError:(NSError *)error {
 	NSLog(@"Pattern error.\n%@", error.localizedDescription);
+	[patternLockView redraw];
 }
 
 @end

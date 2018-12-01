@@ -389,6 +389,14 @@ NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 	}
 }
 
+- (void)redraw {
+	// Deactive
+	[self deactivateAllGestures];
+	
+	// Redraw
+	[self setNeedsDisplay];
+}
+
 #pragma mark - Setters
 
 - (void)setColumn:(NSInteger)column {
