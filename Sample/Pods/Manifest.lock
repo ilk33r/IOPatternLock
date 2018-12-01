@@ -1,0 +1,18 @@
+PODS:
+  - IOPatternLock (1.0.0):
+    - IOPatternLock/Default (= 1.0.0)
+  - IOPatternLock/Default (1.0.0)
+
+DEPENDENCIES:
+  - IOPatternLock (from `../`)
+
+EXTERNAL SOURCES:
+  IOPatternLock:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  IOPatternLock: b73f273badef246d25780c0f9af4da9f404a5b48
+
+PODFILE CHECKSUM: b0b35002700b3bf7106bc1dc1b99f509b761b426
+
+COCOAPODS: 1.6.0.beta.2

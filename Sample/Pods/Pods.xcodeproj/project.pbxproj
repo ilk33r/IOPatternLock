@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EF5FC75E0AE0998C3FAB9261E5B5D7D /* IOPatternLock-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 47CD0CA44642103439F51500536ED1DB /* IOPatternLock-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29EEDF3CCA9FF1204FE5BB82709F24B1 /* IOPatternLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED2BE7E3870CD1FDA16CCE95A3A8738 /* IOPatternLockView.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3246686510364CBFA2B6C98128688E4C /* IOPatternLock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D74EF537A30CE2CDA825E468050652C /* IOPatternLock-dummy.m */; };
+		35C4B96F147D0BBC3E5C5E8D8F0AA232 /* IOCGRectUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AD8963EDA5A032C479DBC0287A9C82E /* IOCGRectUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3F32B77CF56662DF01EBB82176F0349B /* IOPatternLockView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BC5E2A8B09E8166AD6A27B9CED8875 /* IOPatternLockView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		436EC47F2DF8330C52AC85060B257979 /* IOCGRectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE30EFCA7151CB45F8058DAB8F306CC /* IOCGRectUtilities.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		67910E598523BEBF603B04A3D4322762 /* IOPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 85BA990E7AD216DE317482F960ED2D10 /* IOPointsModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9B141E1B505DF310E586F978A0FBE9A9 /* IOPatternLockModel.h in Headers */ = {isa = PBXBuildFile; fileRef = F99103E99452AC9EE56DC38E8954A177 /* IOPatternLockModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A8412DA8EA3E7A2C2EFBCE4F91ECBF4B /* IOPointsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C8BD43E0F18B2F52917B5B49869AE12 /* IOPointsModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B850FA4508FB027363F6260B60DD9481 /* IOPatternLockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C704C7FDCB3F8965056F0CCDAD628D /* IOPatternLockModel.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		C014625E46220EABD95ED874192E5309 /* Pods-IOPatternLockSample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C14C4B53203E6D653BB5DCF5E5CD93A4 /* Pods-IOPatternLockSample-dummy.m */; };
+		DB15C63A8E567F031FD865B839D2912F /* IOPatternLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 367A034944A19019419E913B9A044E76 /* IOPatternLock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F5887B503341866DDE2117FB896761AD /* IOPatternLockDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = AB045EFC3F0D4CE279441B1CDD7691BB /* IOPatternLockDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE09064D5D6ABEBA60B3830E59B91EA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63541B76B4B86CB463BCE8521D26598E;
+			remoteInfo = IOPatternLock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05C704C7FDCB3F8965056F0CCDAD628D /* IOPatternLockModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IOPatternLockModel.m; sourceTree = "<group>"; };
+		13CD4CD1434A6CE73BB7319D35B6E3EF /* Pods-IOPatternLockSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOPatternLockSample.release.xcconfig"; sourceTree = "<group>"; };
+		14F08F1585F43E65D986695D57258519 /* IOPatternLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOPatternLock-prefix.pch"; sourceTree = "<group>"; };
+		15D1B85D459E959FEDCACDC4C842012F /* IOPatternLock.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IOPatternLock.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1A2FB85D4243A34D82DEE8BE2C0E5F15 /* Readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = Readme.md; sourceTree = "<group>"; };
+		1AD8963EDA5A032C479DBC0287A9C82E /* IOCGRectUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOCGRectUtilities.h; sourceTree = "<group>"; };
+		1D74EF537A30CE2CDA825E468050652C /* IOPatternLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IOPatternLock-dummy.m"; sourceTree = "<group>"; };
+		288767CA5CC369513AF90BBE70DA8197 /* IOPatternLock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IOPatternLock.modulemap; sourceTree = "<group>"; };
+		367A034944A19019419E913B9A044E76 /* IOPatternLock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IOPatternLock.h; path = IOPatternLock/IOPatternLock.h; sourceTree = "<group>"; };
+		3ED2BE7E3870CD1FDA16CCE95A3A8738 /* IOPatternLockView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IOPatternLockView.m; sourceTree = "<group>"; };
+		41D439291A8FC9278C5BD56BCC6D99DB /* IOPatternLock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IOPatternLock.xcconfig; sourceTree = "<group>"; };
+		47CD0CA44642103439F51500536ED1DB /* IOPatternLock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOPatternLock-umbrella.h"; sourceTree = "<group>"; };
+		5E601C77FA18EF82D03E339AAA72B814 /* Pods-IOPatternLockSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOPatternLockSample-acknowledgements.plist"; sourceTree = "<group>"; };
+		6EE30EFCA7151CB45F8058DAB8F306CC /* IOCGRectUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IOCGRectUtilities.m; sourceTree = "<group>"; };
+		857DA47ADB3015A08BA6623B0A05568B /* libIOPatternLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libIOPatternLock.a; path = libIOPatternLock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85BA990E7AD216DE317482F960ED2D10 /* IOPointsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IOPointsModel.m; sourceTree = "<group>"; };
+		9C8BD43E0F18B2F52917B5B49869AE12 /* IOPointsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOPointsModel.h; sourceTree = "<group>"; };
+		A3BC5E2A8B09E8166AD6A27B9CED8875 /* IOPatternLockView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOPatternLockView.h; sourceTree = "<group>"; };
+		AB045EFC3F0D4CE279441B1CDD7691BB /* IOPatternLockDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOPatternLockDelegate.h; sourceTree = "<group>"; };
+		B2108640C1033BB4F7C5EBAD0F0B8953 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C14C4B53203E6D653BB5DCF5E5CD93A4 /* Pods-IOPatternLockSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOPatternLockSample-dummy.m"; sourceTree = "<group>"; };
+		C2B70501AA3C5E97263EB4D00BE946D0 /* libPods-IOPatternLockSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-IOPatternLockSample.a"; path = "libPods-IOPatternLockSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9D0C0B128D041EE4BF456BE645424D9 /* Pods-IOPatternLockSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOPatternLockSample.debug.xcconfig"; sourceTree = "<group>"; };
+		EEEC45E1C74B6D1862995E14EB100835 /* Pods-IOPatternLockSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOPatternLockSample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F99103E99452AC9EE56DC38E8954A177 /* IOPatternLockModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOPatternLockModel.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		048249092D675E76907D5226D596DD33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DA33CCA5126D5741AA5F85827A98AEA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01387CD140F1C5E8C3B19E61B1C78292 /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				367A034944A19019419E913B9A044E76 /* IOPatternLock.h */,
+				6658621B3C1002734525BE4F87C6F740 /* Models */,
+				670FA3301974BCBD8441040913A729F1 /* Protocols */,
+				08182EDADD6234A093411D9D1C093B4E /* Utilities */,
+				2371046A9821C07A97E285B667952FE3 /* Views */,
+			);
+			name = Default;
+			sourceTree = "<group>";
+		};
+		08182EDADD6234A093411D9D1C093B4E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1AD8963EDA5A032C479DBC0287A9C82E /* IOCGRectUtilities.h */,
+				6EE30EFCA7151CB45F8058DAB8F306CC /* IOCGRectUtilities.m */,
+			);
+			name = Utilities;
+			path = IOPatternLock/Utilities;
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2371046A9821C07A97E285B667952FE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A3BC5E2A8B09E8166AD6A27B9CED8875 /* IOPatternLockView.h */,
+				3ED2BE7E3870CD1FDA16CCE95A3A8738 /* IOPatternLockView.m */,
+			);
+			name = Views;
+			path = IOPatternLock/Views;
+			sourceTree = "<group>";
+		};
+		31646BF7A041BBC881BE0953D0C8A702 /* IOPatternLock */ = {
+			isa = PBXGroup;
+			children = (
+				01387CD140F1C5E8C3B19E61B1C78292 /* Default */,
+				CF37DF8E15810915D9FF642A3E4DC08E /* Pod */,
+				A2984F28F6D729A1C0445DDD0D8E3BD7 /* Support Files */,
+			);
+			name = IOPatternLock;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6658621B3C1002734525BE4F87C6F740 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F99103E99452AC9EE56DC38E8954A177 /* IOPatternLockModel.h */,
+				05C704C7FDCB3F8965056F0CCDAD628D /* IOPatternLockModel.m */,
+				9C8BD43E0F18B2F52917B5B49869AE12 /* IOPointsModel.h */,
+				85BA990E7AD216DE317482F960ED2D10 /* IOPointsModel.m */,
+			);
+			name = Models;
+			path = IOPatternLock/Models;
+			sourceTree = "<group>";
+		};
+		670FA3301974BCBD8441040913A729F1 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				AB045EFC3F0D4CE279441B1CDD7691BB /* IOPatternLockDelegate.h */,
+			);
+			name = Protocols;
+			path = IOPatternLock/Protocols;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				F0D2C436B27609EFFD1DEC262BD94D5F /* Development Pods */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				95B056C5AFAE42F5AC4E06573F146C69 /* Products */,
+				B0A5553FCEA556F739EB128405BD9F3E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		95B056C5AFAE42F5AC4E06573F146C69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				857DA47ADB3015A08BA6623B0A05568B /* libIOPatternLock.a */,
+				C2B70501AA3C5E97263EB4D00BE946D0 /* libPods-IOPatternLockSample.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2984F28F6D729A1C0445DDD0D8E3BD7 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				288767CA5CC369513AF90BBE70DA8197 /* IOPatternLock.modulemap */,
+				41D439291A8FC9278C5BD56BCC6D99DB /* IOPatternLock.xcconfig */,
+				1D74EF537A30CE2CDA825E468050652C /* IOPatternLock-dummy.m */,
+				14F08F1585F43E65D986695D57258519 /* IOPatternLock-prefix.pch */,
+				47CD0CA44642103439F51500536ED1DB /* IOPatternLock-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Sample/Pods/Target Support Files/IOPatternLock";
+			sourceTree = "<group>";
+		};
+		B0A5553FCEA556F739EB128405BD9F3E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE57518E857688BC331FBECD93EDBD2E /* Pods-IOPatternLockSample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF37DF8E15810915D9FF642A3E4DC08E /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				15D1B85D459E959FEDCACDC4C842012F /* IOPatternLock.podspec */,
+				B2108640C1033BB4F7C5EBAD0F0B8953 /* LICENSE */,
+				1A2FB85D4243A34D82DEE8BE2C0E5F15 /* Readme.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		EE57518E857688BC331FBECD93EDBD2E /* Pods-IOPatternLockSample */ = {
+			isa = PBXGroup;
+			children = (
+				EEEC45E1C74B6D1862995E14EB100835 /* Pods-IOPatternLockSample-acknowledgements.markdown */,
+				5E601C77FA18EF82D03E339AAA72B814 /* Pods-IOPatternLockSample-acknowledgements.plist */,
+				C14C4B53203E6D653BB5DCF5E5CD93A4 /* Pods-IOPatternLockSample-dummy.m */,
+				D9D0C0B128D041EE4BF456BE645424D9 /* Pods-IOPatternLockSample.debug.xcconfig */,
+				13CD4CD1434A6CE73BB7319D35B6E3EF /* Pods-IOPatternLockSample.release.xcconfig */,
+			);
+			name = "Pods-IOPatternLockSample";
+			path = "Target Support Files/Pods-IOPatternLockSample";
+			sourceTree = "<group>";
+		};
+		F0D2C436B27609EFFD1DEC262BD94D5F /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31646BF7A041BBC881BE0953D0C8A702 /* IOPatternLock */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		87BAC1379A27CA1F91FA42EA91D83358 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE1BB485E9C0DEC0A67400417F3A6B79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35C4B96F147D0BBC3E5C5E8D8F0AA232 /* IOCGRectUtilities.h in Headers */,
+				0EF5FC75E0AE0998C3FAB9261E5B5D7D /* IOPatternLock-umbrella.h in Headers */,
+				DB15C63A8E567F031FD865B839D2912F /* IOPatternLock.h in Headers */,
+				F5887B503341866DDE2117FB896761AD /* IOPatternLockDelegate.h in Headers */,
+				9B141E1B505DF310E586F978A0FBE9A9 /* IOPatternLockModel.h in Headers */,
+				3F32B77CF56662DF01EBB82176F0349B /* IOPatternLockView.h in Headers */,
+				A8412DA8EA3E7A2C2EFBCE4F91ECBF4B /* IOPointsModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		63541B76B4B86CB463BCE8521D26598E /* IOPatternLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F7A1CB79D4B9643FAA790CAE259AB6 /* Build configuration list for PBXNativeTarget "IOPatternLock" */;
+			buildPhases = (
+				DE1BB485E9C0DEC0A67400417F3A6B79 /* Headers */,
+				51CAC518CC39529CBFBA416ED961C6A7 /* Sources */,
+				DA33CCA5126D5741AA5F85827A98AEA4 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IOPatternLock;
+			productName = IOPatternLock;
+			productReference = 857DA47ADB3015A08BA6623B0A05568B /* libIOPatternLock.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		C8EBCC26738F41DE402D1B742AE29501 /* Pods-IOPatternLockSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7CA1E0BFC767FC7954266668B93E47 /* Build configuration list for PBXNativeTarget "Pods-IOPatternLockSample" */;
+			buildPhases = (
+				87BAC1379A27CA1F91FA42EA91D83358 /* Headers */,
+				DEC80BE1CCCCC791C2BDBFAA9F5DAEEE /* Sources */,
+				048249092D675E76907D5226D596DD33 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05775A2CBD738BFFB165BAFD9B8396CA /* PBXTargetDependency */,
+			);
+			name = "Pods-IOPatternLockSample";
+			productName = "Pods-IOPatternLockSample";
+			productReference = C2B70501AA3C5E97263EB4D00BE946D0 /* libPods-IOPatternLockSample.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 95B056C5AFAE42F5AC4E06573F146C69 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63541B76B4B86CB463BCE8521D26598E /* IOPatternLock */,
+				C8EBCC26738F41DE402D1B742AE29501 /* Pods-IOPatternLockSample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		51CAC518CC39529CBFBA416ED961C6A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436EC47F2DF8330C52AC85060B257979 /* IOCGRectUtilities.m in Sources */,
+				3246686510364CBFA2B6C98128688E4C /* IOPatternLock-dummy.m in Sources */,
+				B850FA4508FB027363F6260B60DD9481 /* IOPatternLockModel.m in Sources */,
+				29EEDF3CCA9FF1204FE5BB82709F24B1 /* IOPatternLockView.m in Sources */,
+				67910E598523BEBF603B04A3D4322762 /* IOPointsModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DEC80BE1CCCCC791C2BDBFAA9F5DAEEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C014625E46220EABD95ED874192E5309 /* Pods-IOPatternLockSample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05775A2CBD738BFFB165BAFD9B8396CA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IOPatternLock;
+			target = 63541B76B4B86CB463BCE8521D26598E /* IOPatternLock */;
+			targetProxy = BE09064D5D6ABEBA60B3830E59B91EA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08B0394D5F17A9F046DC0719C25BA452 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2A17DE796C5238DF42D446213F21B648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9D0C0B128D041EE4BF456BE645424D9 /* Pods-IOPatternLockSample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		42003D228D336F26DDCE0AE7501A6628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D439291A8FC9278C5BD56BCC6D99DB /* IOPatternLock.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/IOPatternLock/IOPatternLock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/IOPatternLock/IOPatternLock.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = IOPatternLock;
+				PRODUCT_NAME = IOPatternLock;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87DB920392A76D09F854B91D354E1B1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13CD4CD1434A6CE73BB7319D35B6E3EF /* Pods-IOPatternLockSample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E82C56363775B4EF468FF2AD9A2F5414 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		F16ACB3AA9F4E77C587484D08C293106 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41D439291A8FC9278C5BD56BCC6D99DB /* IOPatternLock.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/IOPatternLock/IOPatternLock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MODULEMAP_FILE = Headers/Public/IOPatternLock/IOPatternLock.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = IOPatternLock;
+				PRODUCT_NAME = IOPatternLock;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08B0394D5F17A9F046DC0719C25BA452 /* Debug */,
+				E82C56363775B4EF468FF2AD9A2F5414 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7CA1E0BFC767FC7954266668B93E47 /* Build configuration list for PBXNativeTarget "Pods-IOPatternLockSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2A17DE796C5238DF42D446213F21B648 /* Debug */,
+				87DB920392A76D09F854B91D354E1B1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F7A1CB79D4B9643FAA790CAE259AB6 /* Build configuration list for PBXNativeTarget "IOPatternLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42003D228D336F26DDCE0AE7501A6628 /* Debug */,
+				F16ACB3AA9F4E77C587484D08C293106 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

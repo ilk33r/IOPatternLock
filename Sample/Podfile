@@ -1,0 +1,19 @@
+workspace 'IOPatternLock.xcworkspace'
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+project 'IOPatternLockSample', {
+	'Debug' => :debug,
+	'Release' => :release
+}
+
+$iopatternlock_path = '../'
+
+def framework_pods
+    pod 'IOPatternLock', :path => $iopatternlock_path
+end
+
+target 'IOPatternLockSample' do
+	project 'IOPatternLockSample.xcodeproj'
+	framework_pods
+end

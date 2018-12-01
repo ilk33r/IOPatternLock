@@ -7,31 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96143624B5F699DF8A1B496F /* libPods-IOPatternLockSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 42ECAD44C4DCC598486DD6A4 /* libPods-IOPatternLockSample.a */; };
 		B9A819E421AD4CD9001F8522 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A819E321AD4CD9001F8522 /* AppDelegate.m */; };
 		B9A819EC21AD4CDC001F8522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9A819EB21AD4CDC001F8522 /* Assets.xcassets */; };
 		B9A819EF21AD4CDC001F8522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A819ED21AD4CDC001F8522 /* LaunchScreen.storyboard */; };
 		B9A819F221AD4CDC001F8522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A819F121AD4CDC001F8522 /* main.m */; };
 		B9A81A0C21AD4E0B001F8522 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9A81A0B21AD4E0B001F8522 /* Main.storyboard */; };
 		B9A81A1321AD60EB001F8522 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A81A1221AD60EB001F8522 /* MainViewController.m */; };
-		B9BA2E8821AD6C3100EE6E4F /* IOPatternLock.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BA2E8721AD6C3100EE6E4F /* IOPatternLock.framework */; };
-		B9BA2E8921AD6C3100EE6E4F /* IOPatternLock.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B9BA2E8721AD6C3100EE6E4F /* IOPatternLock.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B9BA2E8A21AD6C3100EE6E4F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B9BA2E8921AD6C3100EE6E4F /* IOPatternLock.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		42ECAD44C4DCC598486DD6A4 /* libPods-IOPatternLockSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOPatternLockSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		82FAF039F7B425C291D76556 /* Pods-IOPatternLockSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOPatternLockSample.release.xcconfig"; path = "Target Support Files/Pods-IOPatternLockSample/Pods-IOPatternLockSample.release.xcconfig"; sourceTree = "<group>"; };
 		B9A819DF21AD4CD9001F8522 /* IOPatternLockSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOPatternLockSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9A819E221AD4CD9001F8522 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B9A819E321AD4CD9001F8522 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -43,6 +30,7 @@
 		B9A81A1121AD60EB001F8522 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		B9A81A1221AD60EB001F8522 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		B9BA2E8721AD6C3100EE6E4F /* IOPatternLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = IOPatternLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C63DA28BFA2251A3674F02C3 /* Pods-IOPatternLockSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IOPatternLockSample.debug.xcconfig"; path = "Target Support Files/Pods-IOPatternLockSample/Pods-IOPatternLockSample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,19 +38,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9BA2E8821AD6C3100EE6E4F /* IOPatternLock.framework in Frameworks */,
+				96143624B5F699DF8A1B496F /* libPods-IOPatternLockSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		82A5B54A7237D16B189BCBC0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C63DA28BFA2251A3674F02C3 /* Pods-IOPatternLockSample.debug.xcconfig */,
+				82FAF039F7B425C291D76556 /* Pods-IOPatternLockSample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B9A819D621AD4CD9001F8522 = {
 			isa = PBXGroup;
 			children = (
 				B9A819E121AD4CD9001F8522 /* IOPatternLockSample */,
 				B9A819E021AD4CD9001F8522 /* Products */,
 				B9A81A0D21AD4E1B001F8522 /* Frameworks */,
+				82A5B54A7237D16B189BCBC0 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				B9BA2E8721AD6C3100EE6E4F /* IOPatternLock.framework */,
+				42ECAD44C4DCC598486DD6A4 /* libPods-IOPatternLockSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -161,10 +161,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B9A819F521AD4CDC001F8522 /* Build configuration list for PBXNativeTarget "IOPatternLockSample" */;
 			buildPhases = (
+				FAB1212832D5330CDC565BFD /* [CP] Check Pods Manifest.lock */,
 				B9A819DB21AD4CD9001F8522 /* Sources */,
 				B9A819DC21AD4CD9001F8522 /* Frameworks */,
 				B9A819DD21AD4CD9001F8522 /* Resources */,
-				B9BA2E8A21AD6C3100EE6E4F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -219,6 +219,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FAB1212832D5330CDC565BFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IOPatternLockSample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B9A819DB21AD4CD9001F8522 /* Sources */ = {
@@ -296,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -349,7 +374,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -359,6 +384,7 @@
 		};
 		B9A819F621AD4CDC001F8522 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C63DA28BFA2251A3674F02C3 /* Pods-IOPatternLockSample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
@@ -377,6 +403,7 @@
 		};
 		B9A819F721AD4CDC001F8522 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82FAF039F7B425C291D76556 /* Pods-IOPatternLockSample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Manual;
