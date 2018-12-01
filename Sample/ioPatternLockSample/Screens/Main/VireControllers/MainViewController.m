@@ -6,18 +6,25 @@
 //  Copyright © 2018 Ilker OZCAN. All rights reserved.
 //
 
-#import <ioPatternLock/ioPatternLock.h>
+#import <IOPatternLock/IOPatternLock.h>
 #import "MainViewController.h"
 
-@interface MainViewController ()
+@interface MainViewController () <IOPatternLockDelegate>
+
+@property (nonatomic, weak) IBOutlet IOPatternLockView *patternLockView;
 
 @end
 
 @implementation MainViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+#pragma mark - Pattern Lock Delegate
+
+- (void)ioPatternLockView:(IOPatternLockView *)patternLockView patternCompleted:(NSArray<NSNumber *> *)selectedPatterns {
+	NSLog(@"Pattern completed.\nSelected patterns %@", selectedPatterns);
+}
+
+- (void)ioPatternLockView:(IOPatternLockView *)patternLockView patternCompletedWithError:(NSError *)error {
+	NSLog(@"Pattern error.\n%@", error.localizedDescription);
 }
 
 @end

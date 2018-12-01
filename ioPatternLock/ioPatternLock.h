@@ -14,5 +14,5 @@ FOUNDATION_EXPORT double IOPatternLock2VersionNumber;
 //! Project version string for ioPatternLock.
 FOUNDATION_EXPORT const unsigned char IOPatternLock2VersionString[];
 
-#import "IOPatternLockModel.h"
+#import "IOPatternLockDelegate.h"
 #import "IOPatternLockView.h"

@@ -11,10 +11,11 @@
 		B93DAC9621B2A06D000B082E /* IOCGRectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DAC9421B2A06D000B082E /* IOCGRectUtilities.m */; };
 		B93DAC9921B2A09F000B082E /* IOPointsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B93DAC9721B2A09F000B082E /* IOPointsModel.h */; };
 		B93DAC9A21B2A09F000B082E /* IOPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DAC9821B2A09F000B082E /* IOPointsModel.m */; };
+		B93DAC9F21B2D91A000B082E /* IOPatternLockDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = B93DAC9E21B2D91A000B082E /* IOPatternLockDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9BA2E8421AD6BAF00EE6E4F /* IOPatternLock.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A819C921AD4B7C001F8522 /* IOPatternLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9BA2E8521AD6BB500EE6E4F /* IOPatternLockView.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A819D321AD4CA1001F8522 /* IOPatternLockView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B9BA2E8621AD6BB500EE6E4F /* IOPatternLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A819D421AD4CA1001F8522 /* IOPatternLockView.m */; };
-		B9BA2E8E21AD978400EE6E4F /* IOPatternLockModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B9BA2E8C21AD978400EE6E4F /* IOPatternLockModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BA2E8E21AD978400EE6E4F /* IOPatternLockModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B9BA2E8C21AD978400EE6E4F /* IOPatternLockModel.h */; };
 		B9BA2E8F21AD978400EE6E4F /* IOPatternLockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BA2E8D21AD978400EE6E4F /* IOPatternLockModel.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,7 @@
 		B93DAC9421B2A06D000B082E /* IOCGRectUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOCGRectUtilities.m; sourceTree = "<group>"; };
 		B93DAC9721B2A09F000B082E /* IOPointsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOPointsModel.h; sourceTree = "<group>"; };
 		B93DAC9821B2A09F000B082E /* IOPointsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOPointsModel.m; sourceTree = "<group>"; };
+		B93DAC9E21B2D91A000B082E /* IOPatternLockDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOPatternLockDelegate.h; sourceTree = "<group>"; };
 		B9A819C921AD4B7C001F8522 /* IOPatternLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOPatternLock.h; sourceTree = "<group>"; };
 		B9A819D321AD4CA1001F8522 /* IOPatternLockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOPatternLockView.h; sourceTree = "<group>"; };
 		B9A819D421AD4CA1001F8522 /* IOPatternLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOPatternLockView.m; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		B93DAC9C21B2D8F9000B082E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				B93DAC9E21B2D91A000B082E /* IOPatternLockDelegate.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		B9A819BD21AD4B7C001F8522 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				B9BA2E8B21AD976400EE6E4F /* Models */,
+				B93DAC9C21B2D8F9000B082E /* Protocols */,
 				B93DAC9221B2A052000B082E /* Utilities */,
 				B9A819D221AD4C88001F8522 /* Views */,
 				B9A819C921AD4B7C001F8522 /* IOPatternLock.h */,
@@ -112,6 +123,7 @@
 				B9BA2E8421AD6BAF00EE6E4F /* IOPatternLock.h in Headers */,
 				B93DAC9521B2A06D000B082E /* IOCGRectUtilities.h in Headers */,
 				B9BA2E8E21AD978400EE6E4F /* IOPatternLockModel.h in Headers */,
+				B93DAC9F21B2D91A000B082E /* IOPatternLockDelegate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

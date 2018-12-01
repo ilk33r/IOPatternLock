@@ -26,7 +26,7 @@
             </objects>
             <point key="canvasLocation" x="-1294" y="-73"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Delegate-->
         <scene sceneID="VcW-FQ-awg">
             <objects>
                 <viewController id="O95-4s-2H9" customClass="MainViewController" sceneMemberID="viewController">
@@ -45,10 +45,10 @@
                                         <integer key="value" value="4"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.78050035238265991" green="0.80343526601791382" blue="0.84313756227493286" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.77667468790000005" green="0.80504971739999998" blue="0.84908920529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="innerCircleColor">
-                                        <color key="value" red="0.77667468786239624" green="0.80504971742630005" blue="0.84908920526504517" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.77667468790000005" green="0.80504971739999998" blue="0.84908920529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
                                         <color key="value" red="0.49803921568627452" green="0.84705882352941175" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -59,7 +59,25 @@
                                     <userDefinedRuntimeAttribute type="color" keyPath="activeInnerCircleColor">
                                         <color key="value" red="0.49803921569999998" green="0.84705882349999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="minimumNumberOfSelections">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circleSpace">
+                                        <integer key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="innerCirclePadding">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="O95-4s-2H9" id="30H-CN-IyM"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -72,6 +90,9 @@
                         <viewLayoutGuide key="safeArea" id="vtQ-nw-9vd"/>
                     </view>
                     <navigationItem key="navigationItem" id="xzW-8v-qDk"/>
+                    <connections>
+                        <outlet property="patternLockView" destination="qWt-Dm-qWI" id="RG6-cL-3Y8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wyB-bv-IIm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

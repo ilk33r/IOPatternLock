@@ -8,11 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol IOPatternLockDelegate;
+
 NS_ASSUME_NONNULL_BEGIN
 
+IB_DESIGNABLE
 @interface IOPatternLockView : UIView
 
 @property (nonatomic, assign) IBInspectable NSInteger column;
+@property (nonatomic, assign) IBInspectable NSInteger minimumNumberOfSelections;
 @property (nonatomic, assign) IBInspectable NSInteger row;
 
 @property (nonatomic, assign) IBInspectable NSUInteger borderWidth UI_APPEARANCE_SELECTOR;
@@ -24,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) IBInspectable UIColor *borderColor UI_APPEARANCE_SELECTOR;
 @property (nonatomic, strong) IBInspectable UIColor *innerCircleColor UI_APPEARANCE_SELECTOR;
 @property (nonatomic, strong) IBInspectable UIColor *lineColor UI_APPEARANCE_SELECTOR;
+
+@property (nonatomic, weak) IBOutlet id<IOPatternLockDelegate> delegate;
 
 @end
 

@@ -7,6 +7,7 @@
 //
 
 #import "IOCGRectUtilities.h"
+#import "IOPatternLockDelegate.h"
 #import "IOPatternLockModel.h"
 #import "IOPatternLockView.h"
 
@@ -20,6 +21,7 @@
 }
 
 @synthesize column = _column;
+@synthesize minimumNumberOfSelections = _minimumNumberOfSelections;
 @synthesize row = _row;
 @synthesize borderWidth = _borderWidth;
 @synthesize circleSpace = _circleSpace;
@@ -30,6 +32,10 @@
 @synthesize borderColor = _borderColor;
 @synthesize innerCircleColor = _innerCircleColor;
 @synthesize lineColor = _lineColor;
+
+#pragma mark - Constants
+
+NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 
 #pragma mark - Initialization Methods
 
@@ -60,6 +66,7 @@
 - (void)initializeProperties {
 	// Set properties with default values
 	_column = 3;
+	_minimumNumberOfSelections = 3;
 	_row = 3;
 	_borderWidth = 1;
 	_circleSpace = 24;
@@ -78,16 +85,14 @@
 	_startCirclePatternIndex = -1;
 	
 	// Add gesture recognizer to view
+#ifndef TARGET_INTERFACE_BUILDER
 	UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc
 												  ] initWithTarget:self action:@selector(handlePan:)];
 	[self addGestureRecognizer:gestureRecognizer];
+#endif
 }
 
 #pragma mark - View Lifecycle
-
-- (void)awakeFromNib {
-	[super awakeFromNib];
-}
 
 - (void)layoutSubviews {
 	[super layoutSubviews];
@@ -318,6 +323,9 @@
 		// Update gesture status
 		_startCirclePatternIndex = -1;
 		_endPoint = CGPointZero;
+		
+		// Handle pattern completed
+		[self handlePatternCompleted];
 	}
 	
 	// Redraw context
@@ -346,6 +354,38 @@
 	// Loop throught circles
 	for (IOPatternLockModel *pattern in _circlePoints) {
 		pattern.isActive = NO;
+	}
+}
+
+- (void)handlePatternCompleted {
+	// Check delegate is null
+	if (!self.delegate) {
+		// Do nothing
+		return;
+	}
+	
+	// Pattern is success
+	if (_minimumNumberOfSelections <= _selectedCircles.count) {
+		// Create a selected circles array
+		NSMutableArray<NSNumber *> *selectedCircleIndexes = [NSMutableArray new];
+		
+		// Loop throught selected circles
+		for (IOPatternLockModel *patternLock in _selectedCircles) {
+			// Add circle to selected
+			[selectedCircleIndexes addObject:[NSNumber numberWithUnsignedInteger:patternLock.index]];
+		}
+		
+		// Call delegate
+		[self.delegate ioPatternLockView:self patternCompleted:selectedCircleIndexes];
+	}
+	else {
+		// Create an error
+		NSError *error = [NSError errorWithDomain:IOPatternLockErrorDomain code:0 userInfo:@{
+																							 NSLocalizedDescriptionKey: @"Pattern is too short."
+																							}];
+		
+		// Call delegate
+		[self.delegate ioPatternLockView:self patternCompletedWithError:error];
 	}
 }
 
