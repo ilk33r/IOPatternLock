@@ -1,5 +1,5 @@
 # IOPatternLock
-An easy-to-use, customizable Android Pattern Lock view for iOS
+An easy-to-use, customizable Android Pattern Lock view for iOS  \
 ![IOPatternLock](https://raw.githubusercontent.com/ilk33r/IOPatternLock/master/Demo.gif)
 
 ## Specs
@@ -22,6 +22,9 @@ github "ilk33r/IOPatternLock" ~> 1.0.0
 
 Run `carthage update` to build the framework and drag the built `IOPatternLock.framework` into your Xcode project.
 
+### Universal Library
+You can download precompiled universal libraries on ![this page](https://github.com/ilk33r/IOPatternLock/releases).
+
 ## Usage
 ![IOPatternLock](https://raw.githubusercontent.com/ilk33r/IOPatternLock/master/Usage.gif)
 
@@ -36,8 +39,8 @@ Delegate methods that you can use:
 ```
 
 ```swift
-func ioPatternLockView(_ patternLockView: IOPatternLockView, patternCompleted selectedPatterns: [NSNUmber]);
-func ioPatternLockView(_ patternLockView: IOPatternLockView, patternCompletedWithError error: NSError);
+func ioPatternLockView(_ patternLockView: IOPatternLockView, patternCompleted selectedPatterns: [NSNumber]);
+func ioPatternLockView(_ patternLockView: IOPatternLockView, patternCompletedWithError error: Error);
 ```
 
 ## License
