@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "1.0.0",
+  "iOS" : [
+    {
+      "name" : "IOPatternLock",
+      "hash" : "4ea42b23c7d48e3fd70fdcb1492719a132e5d2181ebad9d1c5f3b7eff77ce3f3"
+    }
+  ]
+}

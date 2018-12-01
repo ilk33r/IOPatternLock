@@ -1,8 +1,8 @@
 ## Build generated
-build/
 DerivedData/
 Archives/
 Resources/
+SwiftSample/Carthage/Checkouts
 
 ## Various settings
 *.pbxuser

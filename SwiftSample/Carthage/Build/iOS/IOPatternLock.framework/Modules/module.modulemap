@@ -1,0 +1,6 @@
+framework module IOPatternLock {
+  umbrella header "IOPatternLock.h"
+
+  export *
+  module * { export * }
+}

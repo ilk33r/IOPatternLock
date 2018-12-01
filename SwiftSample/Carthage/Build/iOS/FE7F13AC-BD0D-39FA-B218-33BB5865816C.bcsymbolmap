@@ -1,0 +1,101 @@
+BCSymbolMap Version: 2.0
++[IOPointsModel pointsWithStartX:startY:endX:endY:]
+-[IOPointsModel p1]
+-[IOPointsModel setP1:]
+-[IOPointsModel p2]
+-[IOPointsModel setP2:]
+_OBJC_IVAR_$_IOPointsModel._p1
+_OBJC_IVAR_$_IOPointsModel._p2
+Apple LLVM version 10.0.0 (clang-1000.11.45.5)
+/Users/ilkerozcan/Desktop/Projects/Local/ioPatternLock/SwiftSample/Carthage/Checkouts/IOPatternLock/IOPatternLock/Models/IOPointsModel.m
+/Users/ilkerozcan/Desktop/Projects/Local/ioPatternLock/SwiftSample/Carthage/Checkouts/IOPatternLock
+/Users/ilkerozcan/Desktop/Projects/Local/ioPatternLock/SwiftSample/Carthage/Checkouts/IOPatternLock/IOPatternLock/Models/IOPointsModel.h
++[IOCGRectUtilities getLinePointsFromCircles:toCircle:circleSize:borderWidth:]
++[IOCGRectUtilities getPointsForSideBySide:toCircle:circleSize:]
++[IOCGRectUtilities getPointsForUpsideDown:toCircle:circleSize:]
++[IOCGRectUtilities getPointsForDownCross:toCircle:circleSize:borderWidth:]
++[IOCGRectUtilities getPointsForUpCross:toCircle:circleSize:borderWidth:]
++[IOCGRectUtilities degreeToRadians:]
+/Users/ilkerozcan/Desktop/Projects/Local/ioPatternLock/SwiftSample/Carthage/Checkouts/IOPatternLock/IOPatternLock/Utilities/IOCGRectUtilities.m
+CGPointCenterOfCircle
+-[IOPatternLockView init]
+-[IOPatternLockView initWithFrame:]
+-[IOPatternLockView initWithCoder:]
+-[IOPatternLockView initializeProperties]
+-[IOPatternLockView layoutSubviews]
+-[IOPatternLockView drawRect:]
+-[IOPatternLockView drawCirclesToRect:context:]
+-[IOPatternLockView drawLinesToContext:]
+-[IOPatternLockView drawLinesToContext:withPoints:]
+-[IOPatternLockView handlePan:]
+-[IOPatternLockView getCircleFromPoint:]
+-[IOPatternLockView deactivateAllGestures]
+-[IOPatternLockView handlePatternCompleted]
+-[IOPatternLockView redraw]
+-[IOPatternLockView setColumn:]
+-[IOPatternLockView setRow:]
+-[IOPatternLockView setBorderWidth:]
+-[IOPatternLockView setCircleSpace:]
+-[IOPatternLockView setInnerCirclePadding:]
+-[IOPatternLockView setLineWidth:]
+-[IOPatternLockView setActiveBorderColor:]
+-[IOPatternLockView setActiveInnerCircleColor:]
+-[IOPatternLockView setBorderColor:]
+-[IOPatternLockView setInnerCircleColor:]
+-[IOPatternLockView setLineColor:]
+-[IOPatternLockView column]
+-[IOPatternLockView minimumNumberOfSelections]
+-[IOPatternLockView setMinimumNumberOfSelections:]
+-[IOPatternLockView row]
+-[IOPatternLockView borderWidth]
+-[IOPatternLockView circleSpace]
+-[IOPatternLockView innerCirclePadding]
+-[IOPatternLockView lineWidth]
+-[IOPatternLockView activeBorderColor]
+-[IOPatternLockView activeInnerCircleColor]
+-[IOPatternLockView borderColor]
+-[IOPatternLockView innerCircleColor]
+-[IOPatternLockView lineColor]
+-[IOPatternLockView delegate]
+-[IOPatternLockView setDelegate:]
+-[IOPatternLockView .cxx_destruct]
+_OBJC_IVAR_$_IOPatternLockView._column
+_OBJC_IVAR_$_IOPatternLockView._minimumNumberOfSelections
+_OBJC_IVAR_$_IOPatternLockView._row
+_OBJC_IVAR_$_IOPatternLockView._borderWidth
+_OBJC_IVAR_$_IOPatternLockView._circleSpace
+_OBJC_IVAR_$_IOPatternLockView._innerCirclePadding
+_OBJC_IVAR_$_IOPatternLockView._lineWidth
+_OBJC_IVAR_$_IOPatternLockView._activeBorderColor
+_OBJC_IVAR_$_IOPatternLockView._activeInnerCircleColor
+_OBJC_IVAR_$_IOPatternLockView._borderColor
+_OBJC_IVAR_$_IOPatternLockView._innerCircleColor
+_OBJC_IVAR_$_IOPatternLockView._lineColor
+_OBJC_IVAR_$_IOPatternLockView._endPoint
+_OBJC_IVAR_$_IOPatternLockView._circleSize
+_OBJC_IVAR_$_IOPatternLockView._drawedRect
+_OBJC_IVAR_$_IOPatternLockView._startCirclePatternIndex
+_OBJC_IVAR_$_IOPatternLockView._circlePoints
+_OBJC_IVAR_$_IOPatternLockView._selectedCircles
+_OBJC_IVAR_$_IOPatternLockView._delegate
+/Users/ilkerozcan/Desktop/Projects/Local/ioPatternLock/SwiftSample/Carthage/Checkouts/IOPatternLock/IOPatternLock/Views/IOPatternLockView.m
+/Users/ilkerozcan/Desktop/Projects/Local/ioPatternLock/SwiftSample/Carthage/Checkouts/IOPatternLock/IOPatternLock/Views/IOPatternLockView.h
+__CGPointEqualToPoint
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.1.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
++[IOPatternLockModel modelWithPoint:index:]
+-[IOPatternLockModel copy]
+-[IOPatternLockModel x]
+-[IOPatternLockModel setX:]
+-[IOPatternLockModel y]
+-[IOPatternLockModel setY:]
+-[IOPatternLockModel isActive]
+-[IOPatternLockModel setIsActive:]
+-[IOPatternLockModel index]
+-[IOPatternLockModel setIndex:]
+_OBJC_IVAR_$_IOPatternLockModel._x
+_OBJC_IVAR_$_IOPatternLockModel._y
+_OBJC_IVAR_$_IOPatternLockModel._isActive
+_OBJC_IVAR_$_IOPatternLockModel._index
+/Users/ilkerozcan/Desktop/Projects/Local/ioPatternLock/SwiftSample/Carthage/Checkouts/IOPatternLock/IOPatternLock/Models/IOPatternLockModel.m
+/Users/ilkerozcan/Desktop/Projects/Local/ioPatternLock/SwiftSample/Carthage/Checkouts/IOPatternLock/IOPatternLock/Models/IOPatternLockModel.h
+/Users/ilkerozcan/Library/Caches/org.carthage.CarthageKit/DerivedData/10.1_10B61/IOPatternLock/1.0.0/Build/Intermediates.noindex/ArchiveIntermediates/IOPatternLock/IntermediateBuildFilesPath/IOPatternLock.build/Release-iphoneos/IOPatternLock.build/DerivedSources/IOPatternLock_vers.c
