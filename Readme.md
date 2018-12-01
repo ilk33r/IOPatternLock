@@ -23,7 +23,7 @@ github "ilk33r/IOPatternLock" ~> 1.0.0
 Run `carthage update` to build the framework and drag the built `IOPatternLock.framework` into your Xcode project.
 
 ### Universal Library
-You can download precompiled universal libraries on ![this page](https://github.com/ilk33r/IOPatternLock/releases).
+You can download precompiled universal libraries on [this page](https://github.com/ilk33r/IOPatternLock/releases).
 
 ## Usage
 ![IOPatternLock](https://raw.githubusercontent.com/ilk33r/IOPatternLock/master/Usage.gif)
