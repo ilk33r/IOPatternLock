@@ -7,32 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B9A819CC21AD4B7C001F8522 /* ioPatternLock.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = B9A819C921AD4B7C001F8522 /* ioPatternLock.h */; };
-		B9A819D521AD4CA1001F8522 /* ioPatternLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A819D421AD4CA1001F8522 /* ioPatternLockView.m */; };
+		B93DAC9521B2A06D000B082E /* IOCGRectUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = B93DAC9321B2A06D000B082E /* IOCGRectUtilities.h */; };
+		B93DAC9621B2A06D000B082E /* IOCGRectUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DAC9421B2A06D000B082E /* IOCGRectUtilities.m */; };
+		B93DAC9921B2A09F000B082E /* IOPointsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B93DAC9721B2A09F000B082E /* IOPointsModel.h */; };
+		B93DAC9A21B2A09F000B082E /* IOPointsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B93DAC9821B2A09F000B082E /* IOPointsModel.m */; };
+		B9BA2E8421AD6BAF00EE6E4F /* IOPatternLock.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A819C921AD4B7C001F8522 /* IOPatternLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BA2E8521AD6BB500EE6E4F /* IOPatternLockView.h in Headers */ = {isa = PBXBuildFile; fileRef = B9A819D321AD4CA1001F8522 /* IOPatternLockView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BA2E8621AD6BB500EE6E4F /* IOPatternLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B9A819D421AD4CA1001F8522 /* IOPatternLockView.m */; };
+		B9BA2E8E21AD978400EE6E4F /* IOPatternLockModel.h in Headers */ = {isa = PBXBuildFile; fileRef = B9BA2E8C21AD978400EE6E4F /* IOPatternLockModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9BA2E8F21AD978400EE6E4F /* IOPatternLockModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B9BA2E8D21AD978400EE6E4F /* IOPatternLockModel.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B9A819C421AD4B7C001F8522 /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				B9A819CC21AD4B7C001F8522 /* ioPatternLock.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		B9A819C621AD4B7C001F8522 /* libioPatternLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libioPatternLock.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B9A819C921AD4B7C001F8522 /* ioPatternLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ioPatternLock.h; sourceTree = "<group>"; };
-		B9A819D321AD4CA1001F8522 /* ioPatternLockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ioPatternLockView.h; sourceTree = "<group>"; };
-		B9A819D421AD4CA1001F8522 /* ioPatternLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ioPatternLockView.m; sourceTree = "<group>"; };
+		B93DAC9321B2A06D000B082E /* IOCGRectUtilities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOCGRectUtilities.h; sourceTree = "<group>"; };
+		B93DAC9421B2A06D000B082E /* IOCGRectUtilities.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOCGRectUtilities.m; sourceTree = "<group>"; };
+		B93DAC9721B2A09F000B082E /* IOPointsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOPointsModel.h; sourceTree = "<group>"; };
+		B93DAC9821B2A09F000B082E /* IOPointsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOPointsModel.m; sourceTree = "<group>"; };
+		B9A819C921AD4B7C001F8522 /* IOPatternLock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOPatternLock.h; sourceTree = "<group>"; };
+		B9A819D321AD4CA1001F8522 /* IOPatternLockView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOPatternLockView.h; sourceTree = "<group>"; };
+		B9A819D421AD4CA1001F8522 /* IOPatternLockView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOPatternLockView.m; sourceTree = "<group>"; };
+		B9BA2E7C21AD6B9600EE6E4F /* IOPatternLock.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IOPatternLock.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BA2E7F21AD6B9600EE6E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9BA2E8C21AD978400EE6E4F /* IOPatternLockModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IOPatternLockModel.h; sourceTree = "<group>"; };
+		B9BA2E8D21AD978400EE6E4F /* IOPatternLockModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IOPatternLockModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B9A819C321AD4B7C001F8522 /* Frameworks */ = {
+		B9BA2E7921AD6B9600EE6E4F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,10 +43,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B93DAC9221B2A052000B082E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B93DAC9321B2A06D000B082E /* IOCGRectUtilities.h */,
+				B93DAC9421B2A06D000B082E /* IOCGRectUtilities.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B9A819BD21AD4B7C001F8522 = {
 			isa = PBXGroup;
 			children = (
-				B9A819C821AD4B7C001F8522 /* ioPatternLock */,
+				B9A819C821AD4B7C001F8522 /* IOPatternLock */,
 				B9A819C721AD4B7C001F8522 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,48 +63,78 @@
 		B9A819C721AD4B7C001F8522 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B9A819C621AD4B7C001F8522 /* libioPatternLock.a */,
+				B9BA2E7C21AD6B9600EE6E4F /* IOPatternLock.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B9A819C821AD4B7C001F8522 /* ioPatternLock */ = {
+		B9A819C821AD4B7C001F8522 /* IOPatternLock */ = {
 			isa = PBXGroup;
 			children = (
+				B9BA2E8B21AD976400EE6E4F /* Models */,
+				B93DAC9221B2A052000B082E /* Utilities */,
 				B9A819D221AD4C88001F8522 /* Views */,
-				B9A819C921AD4B7C001F8522 /* ioPatternLock.h */,
+				B9A819C921AD4B7C001F8522 /* IOPatternLock.h */,
+				B9BA2E7F21AD6B9600EE6E4F /* Info.plist */,
 			);
-			path = ioPatternLock;
+			path = IOPatternLock;
 			sourceTree = "<group>";
 		};
 		B9A819D221AD4C88001F8522 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				B9A819D321AD4CA1001F8522 /* ioPatternLockView.h */,
-				B9A819D421AD4CA1001F8522 /* ioPatternLockView.m */,
+				B9A819D321AD4CA1001F8522 /* IOPatternLockView.h */,
+				B9A819D421AD4CA1001F8522 /* IOPatternLockView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
+		B9BA2E8B21AD976400EE6E4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B9BA2E8C21AD978400EE6E4F /* IOPatternLockModel.h */,
+				B9BA2E8D21AD978400EE6E4F /* IOPatternLockModel.m */,
+				B93DAC9721B2A09F000B082E /* IOPointsModel.h */,
+				B93DAC9821B2A09F000B082E /* IOPointsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		B9BA2E7721AD6B9600EE6E4F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BA2E8521AD6BB500EE6E4F /* IOPatternLockView.h in Headers */,
+				B93DAC9921B2A09F000B082E /* IOPointsModel.h in Headers */,
+				B9BA2E8421AD6BAF00EE6E4F /* IOPatternLock.h in Headers */,
+				B93DAC9521B2A06D000B082E /* IOCGRectUtilities.h in Headers */,
+				B9BA2E8E21AD978400EE6E4F /* IOPatternLockModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		B9A819C521AD4B7C001F8522 /* ioPatternLock */ = {
+		B9BA2E7B21AD6B9600EE6E4F /* IOPatternLock */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B9A819CF21AD4B7C001F8522 /* Build configuration list for PBXNativeTarget "ioPatternLock" */;
+			buildConfigurationList = B9BA2E8321AD6B9600EE6E4F /* Build configuration list for PBXNativeTarget "IOPatternLock" */;
 			buildPhases = (
-				B9A819C221AD4B7C001F8522 /* Sources */,
-				B9A819C321AD4B7C001F8522 /* Frameworks */,
-				B9A819C421AD4B7C001F8522 /* CopyFiles */,
+				B9BA2E7721AD6B9600EE6E4F /* Headers */,
+				B9BA2E7821AD6B9600EE6E4F /* Sources */,
+				B9BA2E7921AD6B9600EE6E4F /* Frameworks */,
+				B9BA2E7A21AD6B9600EE6E4F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = ioPatternLock;
-			productName = ioPatternLock;
-			productReference = B9A819C621AD4B7C001F8522 /* libioPatternLock.a */;
-			productType = "com.apple.product-type.library.static";
+			name = IOPatternLock;
+			productName = IOPatternLock2;
+			productReference = B9BA2E7C21AD6B9600EE6E4F /* IOPatternLock.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -105,12 +145,12 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Ilker OZCAN";
 				TargetAttributes = {
-					B9A819C521AD4B7C001F8522 = {
+					B9BA2E7B21AD6B9600EE6E4F = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
-			buildConfigurationList = B9A819C121AD4B7C001F8522 /* Build configuration list for PBXProject "ioPatternLock" */;
+			buildConfigurationList = B9A819C121AD4B7C001F8522 /* Build configuration list for PBXProject "IOPatternLock" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -122,17 +162,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B9A819C521AD4B7C001F8522 /* ioPatternLock */,
+				B9BA2E7B21AD6B9600EE6E4F /* IOPatternLock */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B9BA2E7A21AD6B9600EE6E4F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		B9A819C221AD4B7C001F8522 /* Sources */ = {
+		B9BA2E7821AD6B9600EE6E4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9A819D521AD4CA1001F8522 /* ioPatternLockView.m in Sources */,
+				B93DAC9A21B2A09F000B082E /* IOPointsModel.m in Sources */,
+				B93DAC9621B2A06D000B082E /* IOCGRectUtilities.m in Sources */,
+				B9BA2E8621AD6BB500EE6E4F /* IOPatternLockView.m in Sources */,
+				B9BA2E8F21AD978400EE6E4F /* IOPatternLockModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,32 +304,66 @@
 			};
 			name = Release;
 		};
-		B9A819D021AD4B7C001F8522 /* Debug */ = {
+		B9BA2E8121AD6B9600EE6E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IOPatternLock/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilkerozcan.IOPatternLock;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		B9A819D121AD4B7C001F8522 /* Release */ = {
+		B9BA2E8221AD6B9600EE6E4F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = IOPatternLock/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ilkerozcan.IOPatternLock;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B9A819C121AD4B7C001F8522 /* Build configuration list for PBXProject "ioPatternLock" */ = {
+		B9A819C121AD4B7C001F8522 /* Build configuration list for PBXProject "IOPatternLock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B9A819CD21AD4B7C001F8522 /* Debug */,
@@ -285,11 +372,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B9A819CF21AD4B7C001F8522 /* Build configuration list for PBXNativeTarget "ioPatternLock" */ = {
+		B9BA2E8321AD6B9600EE6E4F /* Build configuration list for PBXNativeTarget "IOPatternLock" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B9A819D021AD4B7C001F8522 /* Debug */,
-				B9A819D121AD4B7C001F8522 /* Release */,
+				B9BA2E8121AD6B9600EE6E4F /* Debug */,
+				B9BA2E8221AD6B9600EE6E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

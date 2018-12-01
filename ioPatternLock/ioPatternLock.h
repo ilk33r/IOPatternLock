@@ -1,13 +1,18 @@
 //
-//  ioPatternLock.h
-//  ioPatternLock
+//  IOPatternLock.h
+//  IOPatternLock
 //
 //  Created by Ilker OZCAN on 27.11.2018.
 //  Copyright © 2018 Ilker OZCAN. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface ioPatternLock : NSObject
+//! Project version number for ioPatternLock.
+FOUNDATION_EXPORT double IOPatternLock2VersionNumber;
 
-@end
+//! Project version string for ioPatternLock.
+FOUNDATION_EXPORT const unsigned char IOPatternLock2VersionString[];
+
+#import "IOPatternLockModel.h"
+#import "IOPatternLockView.h"

@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B9A819C521AD4B7C001F8522"
-               BuildableName = "libioPatternLock.a"
-               BlueprintName = "ioPatternLock"
-               ReferencedContainer = "container:ioPatternLock.xcodeproj">
+               BlueprintIdentifier = "B9BA2E7B21AD6B9600EE6E4F"
+               BuildableName = "IOPatternLock.framework"
+               BlueprintName = "IOPatternLock"
+               ReferencedContainer = "container:IOPatternLock.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B9A819C521AD4B7C001F8522"
-            BuildableName = "libioPatternLock.a"
-            BlueprintName = "ioPatternLock"
-            ReferencedContainer = "container:ioPatternLock.xcodeproj">
+            BlueprintIdentifier = "B9BA2E7B21AD6B9600EE6E4F"
+            BuildableName = "IOPatternLock.framework"
+            BlueprintName = "IOPatternLock"
+            ReferencedContainer = "container:IOPatternLock.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -63,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B9A819C521AD4B7C001F8522"
-            BuildableName = "libioPatternLock.a"
-            BlueprintName = "ioPatternLock"
-            ReferencedContainer = "container:ioPatternLock.xcodeproj">
+            BlueprintIdentifier = "B9BA2E7B21AD6B9600EE6E4F"
+            BuildableName = "IOPatternLock.framework"
+            BlueprintName = "IOPatternLock"
+            ReferencedContainer = "container:IOPatternLock.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

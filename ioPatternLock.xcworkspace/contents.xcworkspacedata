@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:ioPatternLock.xcodeproj">
+      location = "group:IOPatternLock.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Sample/ioPatternLockSample.xcodeproj">
+      location = "group:Sample/IOPatternLockSample.xcodeproj">
    </FileRef>
 </Workspace>
