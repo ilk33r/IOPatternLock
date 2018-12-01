@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -36,8 +36,8 @@
 		05C704C7FDCB3F8965056F0CCDAD628D /* IOPatternLockModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IOPatternLockModel.m; sourceTree = "<group>"; };
 		13CD4CD1434A6CE73BB7319D35B6E3EF /* Pods-IOPatternLockSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOPatternLockSample.release.xcconfig"; sourceTree = "<group>"; };
 		14F08F1585F43E65D986695D57258519 /* IOPatternLock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOPatternLock-prefix.pch"; sourceTree = "<group>"; };
-		15D1B85D459E959FEDCACDC4C842012F /* IOPatternLock.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = IOPatternLock.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1A2FB85D4243A34D82DEE8BE2C0E5F15 /* Readme.md */ = {isa = PBXFileReference; includeInIndex = 1; path = Readme.md; sourceTree = "<group>"; };
+		15D1B85D459E959FEDCACDC4C842012F /* IOPatternLock.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = IOPatternLock.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		1A2FB85D4243A34D82DEE8BE2C0E5F15 /* Readme.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
 		1AD8963EDA5A032C479DBC0287A9C82E /* IOCGRectUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOCGRectUtilities.h; sourceTree = "<group>"; };
 		1D74EF537A30CE2CDA825E468050652C /* IOPatternLock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IOPatternLock-dummy.m"; sourceTree = "<group>"; };
 		288767CA5CC369513AF90BBE70DA8197 /* IOPatternLock.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IOPatternLock.modulemap; sourceTree = "<group>"; };
@@ -47,15 +47,15 @@
 		47CD0CA44642103439F51500536ED1DB /* IOPatternLock-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IOPatternLock-umbrella.h"; sourceTree = "<group>"; };
 		5E601C77FA18EF82D03E339AAA72B814 /* Pods-IOPatternLockSample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IOPatternLockSample-acknowledgements.plist"; sourceTree = "<group>"; };
 		6EE30EFCA7151CB45F8058DAB8F306CC /* IOCGRectUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IOCGRectUtilities.m; sourceTree = "<group>"; };
-		857DA47ADB3015A08BA6623B0A05568B /* libIOPatternLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libIOPatternLock.a; path = libIOPatternLock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		857DA47ADB3015A08BA6623B0A05568B /* libIOPatternLock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIOPatternLock.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		85BA990E7AD216DE317482F960ED2D10 /* IOPointsModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = IOPointsModel.m; sourceTree = "<group>"; };
 		9C8BD43E0F18B2F52917B5B49869AE12 /* IOPointsModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOPointsModel.h; sourceTree = "<group>"; };
 		A3BC5E2A8B09E8166AD6A27B9CED8875 /* IOPatternLockView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOPatternLockView.h; sourceTree = "<group>"; };
 		AB045EFC3F0D4CE279441B1CDD7691BB /* IOPatternLockDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOPatternLockDelegate.h; sourceTree = "<group>"; };
-		B2108640C1033BB4F7C5EBAD0F0B8953 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B2108640C1033BB4F7C5EBAD0F0B8953 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C14C4B53203E6D653BB5DCF5E5CD93A4 /* Pods-IOPatternLockSample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IOPatternLockSample-dummy.m"; sourceTree = "<group>"; };
-		C2B70501AA3C5E97263EB4D00BE946D0 /* libPods-IOPatternLockSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-IOPatternLockSample.a"; path = "libPods-IOPatternLockSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B70501AA3C5E97263EB4D00BE946D0 /* libPods-IOPatternLockSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IOPatternLockSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9D0C0B128D041EE4BF456BE645424D9 /* Pods-IOPatternLockSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IOPatternLockSample.debug.xcconfig"; sourceTree = "<group>"; };
 		EEEC45E1C74B6D1862995E14EB100835 /* Pods-IOPatternLockSample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IOPatternLockSample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		F99103E99452AC9EE56DC38E8954A177 /* IOPatternLockModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = IOPatternLockModel.h; sourceTree = "<group>"; };
@@ -528,8 +528,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
