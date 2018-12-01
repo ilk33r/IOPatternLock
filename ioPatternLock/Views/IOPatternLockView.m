@@ -310,7 +310,7 @@ NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 		IOPatternLockModel *circlePattern = [self getCircleFromPoint:gestureCoordinate];
 
 		// Check drawing is start
-		if (circlePattern && !circlePattern.isActive && circlePattern.index != _startCirclePatternIndex) {
+		if (circlePattern && circlePattern.index != _startCirclePatternIndex) {
 			// Activate circle pattern
 			circlePattern.isActive = YES;
 			_startCirclePatternIndex = circlePattern.index;
