@@ -376,7 +376,7 @@ NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 		}
 		
 		// Call delegate
-		[self.delegate ioPatternLockView:self patternCompleted:selectedCircleIndexes];
+		[self.delegate IOPatternLockView:self patternCompleted:selectedCircleIndexes];
 	}
 	else {
 		// Create an error
@@ -385,7 +385,7 @@ NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 																							}];
 		
 		// Call delegate
-		[self.delegate ioPatternLockView:self patternCompletedWithError:error];
+		[self.delegate IOPatternLockView:self patternCompletedWithError:error];
 	}
 }
 

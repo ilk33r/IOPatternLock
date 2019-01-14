@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol IOPatternLockDelegate <NSObject>
 
-- (void)ioPatternLockView:(IOPatternLockView *)patternLockView patternCompleted:(NSArray<NSNumber *> *)selectedPatterns;
-- (void)ioPatternLockView:(IOPatternLockView *)patternLockView patternCompletedWithError:(NSError *)error;
+- (void)IOPatternLockView:(IOPatternLockView *)patternLockView patternCompleted:(NSArray<NSNumber *> *)selectedPatterns;
+- (void)IOPatternLockView:(IOPatternLockView *)patternLockView patternCompletedWithError:(NSError *)error;
 
 @end
 
