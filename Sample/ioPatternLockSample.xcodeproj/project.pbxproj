@@ -51,7 +51,6 @@
 				C63DA28BFA2251A3674F02C3 /* Pods-IOPatternLockSample.debug.xcconfig */,
 				82FAF039F7B425C291D76556 /* Pods-IOPatternLockSample.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
