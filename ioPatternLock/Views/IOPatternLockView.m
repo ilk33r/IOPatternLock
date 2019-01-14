@@ -209,7 +209,7 @@ NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 		
 		// Update point
 		point.x = 0;
-		point.y += _circleSize + circleSpaceSize;
+		point.y += _circleSize + _circleSpace;
 	}
 }
 
