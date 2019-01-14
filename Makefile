@@ -25,9 +25,9 @@ X86_OBJECT_FILES = $(addprefix $(OBJECTS_ROOT_DIR)/x86_64/, $(OBJECT_FILES))
 HEADERS = IOPatternLock.h IOPatternLockDelegate.h IOPatternLockView.h
 PUBLIC_HEADERS_SOURCE = $(SOURCE_ROOT_DIR)/$(MODULE_NAME)/IOPatternLock.h $(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Protocols/IOPatternLockDelegate.h $(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Views/IOPatternLockView.h
 PUBLIC_HEADERS = $(addprefix $(PUBLIC_HEADERS_DIR)/, $(HEADERS))
-HEADER_SEARCH_PATHS = $(SOURCE_ROOT_DIR)/$(MODULE_NAME) \
-	$(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Models $(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Utilities $(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Views \
-	$(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Protocols 
+HEADER_SEARCH_PATHS = -I$(SOURCE_ROOT_DIR)/$(MODULE_NAME) \
+	-I$(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Models -I$(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Utilities -I$(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Views \
+	-I$(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Protocols
 
 OS = $(shell uname)
 Darwin_CLANG = clang
@@ -37,7 +37,7 @@ DEBUG.release = -g -Os -DRELEASE=1
 DEBUG.debug = -g -O0 -DDEBUG=1
 DEBUG := $(DEBUG.$(BUILD))
 
-CLANG_FLAGS = $(DEBUG) -std=gnu11 -stdlib=libc++ -fobjc-arc -fobjc-weak -fobjc-abi-version=2 $(addprefix -I, $(HEADER_PATHS))
+CLANG_FLAGS = $(DEBUG) -std=gnu11 -stdlib=libc++ -fobjc-arc -fobjc-weak -fobjc-abi-version=2 $(HEADER_SEARCH_PATHS)
 COMPILER_FLAGS = -x objective-c $(CLANG_FLAGS)
 LINKER_FLAGS = -static
 FRAMEWORK_LINKER_FLAGS = -dynamiclib -mios-simulator-version-min=$(TARGET_SDK_VERSION) -Xlinker -rpath -Xlinker @executable_path/Frameworks \
@@ -45,7 +45,7 @@ FRAMEWORK_LINKER_FLAGS = -dynamiclib -mios-simulator-version-min=$(TARGET_SDK_VE
 	 -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime \
 	  -compatibility_version 1 -current_version 1 -Xlinker -dependency_info
 
-all : prepareBuildDir $(PRODUCT_STATIC_LIBRARY_DIR)/lib$(MODULE_NAME).a $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME).framework prepareFrameworkHeaderss
+all : prepareBuildDir $(PRODUCT_STATIC_LIBRARY_DIR)/lib$(MODULE_NAME).a cleanObjects $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME).framework prepareFrameworkHeaderss
 
 clean:
 	@rm -rf $(BUILD_ROOT_DIR)
@@ -97,31 +97,31 @@ $(OBJECTS_ROOT_DIR)/armv7/%.o: $(SOURCE_FILES)
 $(OBJECTS_ROOT_DIR)/x86_64/%.o: $(SOURCE_FILES)
 	$(CLANG) -x c -arch x86_64 -isysroot $(SIMULATOR_SDK) -mios-simulator-version-min=$(TARGET_SDK_VERSION) $(COMPILER_FLAGS) -c $< -o $@
 	
-$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework/$(MODULE_NAME):
+$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework/$(MODULE_NAME): $(ARM64_OBJECT_FILES)
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework/Headers
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework/Modules
 	@cp -r $(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Info.plist $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework
 	@cp -r $(PRODUCT_FRAMEWORK_DIR)/module.modulemap $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework/Modules
-	$(CLANG) -arch arm64 -isysroot $(OS_SDK) $(FRAMEWORK_LINKER_FLAGS) -install_name @rpath/$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework/$(MODULE_NAME) $(addprefix -Xlinker , $(ARM64_OBJECT_FILES)) -o $@
+	$(CLANG) -arch arm64 -isysroot $(OS_SDK) $(FRAMEWORK_LINKER_FLAGS) $(HEADER_SEARCH_PATHS) -install_name @rpath/$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_arm64.framework/$(MODULE_NAME) $(ARM64_OBJECT_FILES) -o $@
 	@chmod +x $@
 	
-$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework/$(MODULE_NAME):
+$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework/$(MODULE_NAME): $(ARMV7_OBJECT_FILES)
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework/Headers
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework/Modules
 	@cp -r $(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Info.plist $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework
 	@cp -r $(PRODUCT_FRAMEWORK_DIR)/module.modulemap $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework/Modules
-	$(CLANG) -arch armv7 -isysroot $(OS_SDK) $(FRAMEWORK_LINKER_FLAGS) -install_name @rpath/$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework/$(MODULE_NAME) $(addprefix -Xlinker , $(ARMV7_OBJECT_FILES)) -o $@
+	$(CLANG) -arch armv7 -isysroot $(OS_SDK) $(FRAMEWORK_LINKER_FLAGS) $(HEADER_SEARCH_PATHS) -install_name @rpath/$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_armv7.framework/$(MODULE_NAME) $(ARMV7_OBJECT_FILES) -o $@
 	@chmod +x $@
 	
-$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework/$(MODULE_NAME):
+$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework/$(MODULE_NAME): $(X86_OBJECT_FILES)
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework/Headers
 	@mkdir -p $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework/Modules
 	@cp -r $(SOURCE_ROOT_DIR)/$(MODULE_NAME)/Info.plist $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework
 	@cp -r $(PRODUCT_FRAMEWORK_DIR)/module.modulemap $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework/Modules
-	$(CLANG) -arch x86_64 -isysroot $(SIMULATOR_SDK) $(FRAMEWORK_LINKER_FLAGS) -install_name @rpath/$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework/$(MODULE_NAME) $(addprefix -Xlinker , $(X86_OBJECT_FILES)) -o $@
+	$(CLANG) -arch x86_64 -isysroot $(SIMULATOR_SDK) $(FRAMEWORK_LINKER_FLAGS) $(HEADER_SEARCH_PATHS) -install_name @rpath/$(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME)_x86_64.framework/$(MODULE_NAME) $(X86_OBJECT_FILES) -o $@
 	@chmod +x $@
 	
 $(PUBLIC_HEADERS_DIR)/%.h: $(PUBLIC_HEADERS_SOURCE)
