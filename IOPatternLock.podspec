@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
 
 	s.platform = :ios, '9.0'
 	s.requires_arc = true
-	s.source = { :git => 'https://github.com/ilk33r/IOPatternLock.git', :tag => '1.0.0' }
+	s.source = { :git => 'https://github.com/ilk33r/IOPatternLock.git', :tag => '1.0.1' }
 
 	s.ios.deployment_target = '9.0'
 	s.default_subspecs = 'Default'
