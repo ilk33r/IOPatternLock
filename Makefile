@@ -45,7 +45,7 @@ FRAMEWORK_LINKER_FLAGS = -dynamiclib -mios-simulator-version-min=$(TARGET_SDK_VE
 	 -Xlinker -no_deduplicate -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime \
 	  -compatibility_version 1 -current_version 1 -Xlinker -dependency_info
 
-all : prepareBuildDir $(PRODUCT_STATIC_LIBRARY_DIR)/lib$(MODULE_NAME).a cleanObjects $(PRODUCT_FRAMEWORK_DIR)/$(MODULE_NAME).framework prepareFrameworkHeaderss
+all : prepareBuildDir $(PRODUCT_STATIC_LIBRARY_DIR)/lib$(MODULE_NAME).a
 
 clean:
 	@rm -rf $(BUILD_ROOT_DIR)
