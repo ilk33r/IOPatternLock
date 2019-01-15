@@ -36,6 +36,7 @@
 #pragma mark - Constants
 
 NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
+CGFloat const ViewPadding = 2;
 
 #pragma mark - Initialization Methods
 
@@ -84,6 +85,9 @@ NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 	_drawedRect = CGRectZero;
 	_startCirclePatternIndex = -1;
 	
+	// Set view clip to bounds
+	self.clipsToBounds = NO;
+	
 	// Add gesture recognizer to view
 #ifndef TARGET_INTERFACE_BUILDER
 	UIPanGestureRecognizer *gestureRecognizer = [[UIPanGestureRecognizer alloc
@@ -127,13 +131,13 @@ NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 
 - (void)drawCirclesToRect:(CGRect)rect context:(CGContextRef)context {
 	// Obtain area width
-	CGFloat drawAreaWidth = rect.size.width;
+	CGFloat drawAreaWidth = rect.size.width - (ViewPadding * 2);
 	CGFloat circleSpaceSize = (_column - 1.0f) * _circleSpace;
 	_circleSize = (drawAreaWidth - circleSpaceSize) / _column;
 	CGFloat innerCircleSize = _circleSize - (_innerCirclePadding * 2);
 	
 	// Create a path
-	CGPoint point = CGPointMake(rect.origin.x, rect.origin.y);
+	CGPoint point = CGPointMake(rect.origin.x + ViewPadding, rect.origin.y + ViewPadding);
 	
 	// Obtain point index
 	NSInteger pointIndex = 0;
@@ -208,7 +212,7 @@ NSString * const IOPatternLockErrorDomain = @"com.ilkerozcan.IOPatternLock";
 		}
 		
 		// Update point
-		point.x = 0;
+		point.x = ViewPadding;
 		point.y += _circleSize + _circleSpace;
 	}
 }
