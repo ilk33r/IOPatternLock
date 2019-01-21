@@ -328,6 +328,9 @@ CGFloat const ViewPadding = 2;
 		_startCirclePatternIndex = -1;
 		_endPoint = CGPointZero;
 		
+		// Find and add missing patterns
+		[self fillMissingCircles];
+		
 		// Handle pattern completed
 		[self handlePatternCompleted];
 	}
@@ -337,6 +340,58 @@ CGFloat const ViewPadding = 2;
 }
 
 #pragma mark - Helper Methods
+
+- (void)deactivateAllGestures {
+	// Reset lines
+	_selectedCircles = [NSMutableArray new];
+	
+	// Loop throught circles
+	for (IOPatternLockModel *pattern in _circlePoints) {
+		pattern.isActive = NO;
+	}
+}
+
+- (void)fillMissingCircles {
+	// Loop throught circles
+	for (NSInteger i = 0; i < _selectedCircles.count; i++) {
+		// Check index is greater than zero
+		if (i <= 0) {
+			// Continue loop
+			continue;
+		}
+		
+		// Obtain previous circle
+		NSInteger previousCircleIndex = i - 1;
+		IOPatternLockModel *previousCircle = [_selectedCircles objectAtIndex:previousCircleIndex];
+		IOPatternLockModel *currentCircle = [_selectedCircles objectAtIndex:i];
+		
+		// Check missing circle exists
+		if (previousCircle.index == currentCircle.index - 2) {
+			// Find circle with index
+			IOPatternLockModel *findedPattern = [self getCircleFromIndex:(previousCircle.index + 1)];
+			
+			// Check circle finded
+			if (findedPattern) {
+				// Then add finded pattern
+				findedPattern.isActive = YES;
+				[_selectedCircles insertObject:findedPattern atIndex:i];
+			}
+		}
+	}
+}
+
+- (IOPatternLockModel *)getCircleFromIndex:(NSInteger)index {
+	// Loop throught points
+	for (IOPatternLockModel *pattern in _circlePoints) {
+		// Check point in model
+		if (pattern.index == index) {
+			// Then return point
+			return pattern;
+		}
+	}
+	
+	return nil;
+}
 
 - (IOPatternLockModel *)getCircleFromPoint:(CGPoint)point {
 	// Loop throught points
@@ -349,16 +404,6 @@ CGFloat const ViewPadding = 2;
 	}
 	
 	return nil;
-}
-
-- (void)deactivateAllGestures {
-	// Reset lines
-	_selectedCircles = [NSMutableArray new];
-	
-	// Loop throught circles
-	for (IOPatternLockModel *pattern in _circlePoints) {
-		pattern.isActive = NO;
-	}
 }
 
 - (void)handlePatternCompleted {
