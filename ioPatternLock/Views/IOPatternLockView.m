@@ -124,9 +124,6 @@ CGFloat const ViewPadding = 2;
 	
 	// Draw lines
 	[self drawLinesToContext:context];
-	
-	// Push context
-	UIGraphicsPushContext(context);
 }
 
 - (void)drawCirclesToRect:(CGRect)rect context:(CGContextRef)context {
