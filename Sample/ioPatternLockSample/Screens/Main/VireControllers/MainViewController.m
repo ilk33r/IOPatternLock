@@ -19,11 +19,11 @@
 
 #pragma mark - Pattern Lock Delegate
 
-- (void)ioPatternLockView:(IOPatternLockView *)patternLockView patternCompleted:(NSArray<NSNumber *> *)selectedPatterns {
+- (void)IOPatternLockView:(IOPatternLockView *)patternLockView patternCompleted:(NSArray<NSNumber *> *)selectedPatterns {
 	NSLog(@"Pattern completed.\nSelected patterns %@", selectedPatterns);
 }
 
-- (void)ioPatternLockView:(IOPatternLockView *)patternLockView patternCompletedWithError:(NSError *)error {
+- (void)IOPatternLockView:(IOPatternLockView *)patternLockView patternCompletedWithError:(NSError *)error {
 	NSLog(@"Pattern error.\n%@", error.localizedDescription);
 	[patternLockView redraw];
 }
