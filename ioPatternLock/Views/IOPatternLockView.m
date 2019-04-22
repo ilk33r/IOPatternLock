@@ -15,9 +15,9 @@
 	CGFloat _circleSize;
 	CGPoint _endPoint;
 	CGRect _drawedRect;
+	NSInteger _startCirclePatternIndex;
 	NSMutableArray<IOPatternLockModel *> *_circlePoints;
 	NSMutableArray<IOPatternLockModel *> *_selectedCircles;
-	NSInteger _startCirclePatternIndex;
 }
 
 @synthesize column = _column;
@@ -152,7 +152,7 @@ CGFloat const ViewPadding = 2;
 			// Check point is inserted before
 			if (_circlePoints.count <= pointIndex) {
 				// Then add point to array
-				pointModel = [IOPatternLockModel modelWithPoint:point index:pointIndex];
+				pointModel = [IOPatternLockModel modelWithPoint:point index:pointIndex column:currentColumn row:currentRow];
 				[_circlePoints addObject:pointModel];
 			}
 			else {
@@ -312,6 +312,9 @@ CGFloat const ViewPadding = 2;
 
 		// Check drawing is start
 		if (circlePattern && circlePattern.index != _startCirclePatternIndex) {
+			// Fill missing circles
+			[self fillMissingCircles:_startCirclePatternIndex endCircleIndex:circlePattern.index];
+			
 			// Activate circle pattern
 			circlePattern.isActive = YES;
 			_startCirclePatternIndex = circlePattern.index;
@@ -324,9 +327,6 @@ CGFloat const ViewPadding = 2;
 		// Update gesture status
 		_startCirclePatternIndex = -1;
 		_endPoint = CGPointZero;
-		
-		// Find and add missing patterns
-		[self fillMissingCircles];
 		
 		// Handle pattern completed
 		[self handlePatternCompleted];
@@ -348,30 +348,84 @@ CGFloat const ViewPadding = 2;
 	}
 }
 
-- (void)fillMissingCircles {
-	// Loop throught circles
-	for (NSInteger i = 0; i < _selectedCircles.count; i++) {
-		// Check index is greater than zero
-		if (i <= 0) {
-			// Continue loop
-			continue;
+- (void)fillMissingCircles:(NSUInteger)startCircleIndex endCircleIndex:(NSUInteger)endCircleIndex {
+	// Check direction is left
+	IOPatternLockModel *startCircle = [_circlePoints objectAtIndex:startCircleIndex];
+	IOPatternLockModel *endCircle = [_circlePoints objectAtIndex:endCircleIndex];
+	NSInteger startCircleSelectedIndex = 0;
+	NSInteger endCircleSelectedIndex = (NSInteger)_selectedCircles.count;
+	
+	// Loop throught selected circles
+	for (IOPatternLockModel *circle in _selectedCircles) {
+		// Increate index
+		startCircleSelectedIndex += 1;
+		// Check circle is start circle
+		if (circle.row == startCircle.row && circle.column == startCircle.column) {
+			// Break the loop
+			break;
 		}
-		
-		// Obtain previous circle
-		NSInteger previousCircleIndex = i - 1;
-		IOPatternLockModel *previousCircle = [_selectedCircles objectAtIndex:previousCircleIndex];
-		IOPatternLockModel *currentCircle = [_selectedCircles objectAtIndex:i];
-		
-		// Check missing circle exists
-		if (previousCircle.index == currentCircle.index - 2) {
-			// Find circle with index
-			IOPatternLockModel *findedPattern = [self getCircleFromIndex:(previousCircle.index + 1)];
-			
-			// Check circle finded
-			if (findedPattern) {
-				// Then add finded pattern
-				findedPattern.isActive = YES;
-				[_selectedCircles insertObject:findedPattern atIndex:i];
+	}
+	
+	// Check circles is the same row
+	if (startCircle.row == endCircle.row) {
+		// Check direction is right
+		if (startCircle.column < endCircle.column) {
+			// Fill missing circles
+			NSInteger loopEndIndex = (endCircle.row * _column) + endCircle.column;
+			NSInteger loopStartIndex = (startCircle.row * _column) + startCircle.column;
+			for (NSInteger i = loopStartIndex + 1; i < loopEndIndex; i++) {
+				IOPatternLockModel *circle = [_circlePoints objectAtIndex:i];
+				if (!circle.isActive) {
+					circle.isActive = YES;
+					[_selectedCircles insertObject:circle atIndex:startCircleSelectedIndex];
+				}
+				
+				startCircleSelectedIndex += 1;
+			}
+		}
+		else if (startCircle.column > endCircle.column) {
+			// Fill missing circles
+			NSInteger loopEndIndex = (endCircle.row * _column) + endCircle.column;
+			NSInteger loopStartIndex = (startCircle.row * _column) + startCircle.column;
+			for (NSInteger i = loopStartIndex - 1; i > loopEndIndex; i--) {
+				IOPatternLockModel *circle = [_circlePoints objectAtIndex:i];
+				if (!circle.isActive) {
+					circle.isActive = YES;
+					[_selectedCircles insertObject:circle atIndex:endCircleSelectedIndex];
+				}
+				
+				endCircleSelectedIndex += 1;
+			}
+		}
+	}
+	else if (startCircle.column == endCircle.column) {
+		// Check direction is right
+		if (startCircle.row < endCircle.row) {
+			// Fill missing circles
+			NSInteger loopEndIndex = (_column * endCircle.row) + endCircle.column;
+			NSInteger loopStartIndex = (_column * startCircle.row) + startCircle.column;
+			for (NSInteger i = loopStartIndex + _column; i < loopEndIndex; i += _column) {
+				IOPatternLockModel *circle = [_circlePoints objectAtIndex:i];
+				if (!circle.isActive) {
+					circle.isActive = YES;
+					[_selectedCircles insertObject:circle atIndex:startCircleSelectedIndex];
+				}
+				
+				startCircleSelectedIndex += 1;
+			}
+		}
+		else if (startCircle.row > endCircle.row) {
+			// Fill missing circles
+			NSInteger loopEndIndex = (_column * endCircle.row) + endCircle.column;
+			NSInteger loopStartIndex = (_column * startCircle.row) + startCircle.column;
+			for (NSInteger i = loopStartIndex - _column; i > loopEndIndex; i -= _column) {
+				IOPatternLockModel *circle = [_circlePoints objectAtIndex:i];
+				if (!circle.isActive) {
+					circle.isActive = YES;
+					[_selectedCircles insertObject:circle atIndex:endCircleSelectedIndex];
+				}
+				
+				endCircleSelectedIndex += 1;
 			}
 		}
 	}
