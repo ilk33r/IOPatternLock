@@ -302,8 +302,17 @@ CGFloat const ViewPadding = 2;
 			// Add pattern to start line
 			[_selectedCircles addObject:[circlePattern copy]];
 		}
+		else {
+			_startCirclePatternIndex = -1;
+		}
 	}
 	else if (sender.state == UIGestureRecognizerStateChanged) {
+		// Check start circle index
+		if (_startCirclePatternIndex == NSNotFound || _startCirclePatternIndex == -1) {
+			// Then do nothing
+			return;
+		}
+		
 		// Update end point
 		_endPoint = gestureCoordinate;
 		
@@ -324,6 +333,12 @@ CGFloat const ViewPadding = 2;
 		}
 	}
 	else if (sender.state == UIGestureRecognizerStateEnded || sender.state == UIGestureRecognizerStateCancelled) {
+		// Check start circle index
+		if (_startCirclePatternIndex == NSNotFound || _startCirclePatternIndex == -1) {
+			// Then do nothing
+			return;
+		}
+		
 		// Update gesture status
 		_startCirclePatternIndex = -1;
 		_endPoint = CGPointZero;
@@ -349,6 +364,12 @@ CGFloat const ViewPadding = 2;
 }
 
 - (void)fillMissingCircles:(NSUInteger)startCircleIndex endCircleIndex:(NSUInteger)endCircleIndex {
+	// Check indexes
+	if (startCircleIndex == NSNotFound || endCircleIndex == NSNotFound || startCircleIndex == -1) {
+		// Then do nothing
+		return;
+	}
+	
 	// Check direction is left
 	IOPatternLockModel *startCircle = [_circlePoints objectAtIndex:startCircleIndex];
 	IOPatternLockModel *endCircle = [_circlePoints objectAtIndex:endCircleIndex];
