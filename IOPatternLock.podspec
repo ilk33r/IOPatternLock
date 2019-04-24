@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 	s.name = 'IOPatternLock'
 	s.summary = 'An easy-to-use, customizable Android Pattern Lock view for iOS'
-	s.version = '1.0.5'
+	s.version = '1.0.6'
 	s.author = 'Ilker OZCAN'
 	s.homepage = 'https://github.com/ilk33r/IOPatternLock'
 	s.license = { :type => 'MIT' }
